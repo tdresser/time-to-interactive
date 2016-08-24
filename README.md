@@ -27,3 +27,4 @@ If `firstMeaningfulPaint` occurs during a window of interactivity, `interative` 
 ## TODO
 * Is 50ms a reasonable task length threshold?
 * Is 10 seconds a reasonable window length threshold?
+* Is `interactive` a reasonable name?
