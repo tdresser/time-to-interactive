@@ -5,7 +5,7 @@ Web developers require more information on page load performance in the wild. Fo
 We rely on [`firstMeaningfulPaint`](https://github.com/tdresser/time-to-first-meaningful-paint/blob/master/README.md) to determine when the page's primary content has been displayed on the screen.
 
 ## Using `interactive` 
-Time to interactive will be added to the [PerformanceNavigationTiming](https://www.w3.org/TR/navigation-timing-2/#sec-PerformanceNavigationTiming) interface in the [Navigation Timing API](https://www.w3.org/TR/navigation-timing-2/).
+`interactive` will be added to the [PerformanceNavigationTiming](https://www.w3.org/TR/navigation-timing-2/#sec-PerformanceNavigationTiming) interface in the [Navigation Timing API](https://www.w3.org/TR/navigation-timing-2/).
 
 ```javascript
 window.onLoad = () => { 
