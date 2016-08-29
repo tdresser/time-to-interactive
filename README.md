@@ -1,6 +1,6 @@
 # PerformanceNavigationTiming interactive
 
-Web developers require more information on page load performance in the wild. For many page loads, the primary page content is displayed long before the user can actually interact with the page. `PerformanceNavigationTiming`'s `interactive` attribute will return a `DOMHighResTimeStamp` with a time value approximating the first time the user can interact with the page and the page's primary content has been displayed on the screen.
+Web developers require more information on page load performance in the wild. For many page loads, the primary page content is displayed long before the user can actually interact with the page. `PerformanceNavigationTiming`'s `interactive` attribute will return a `DOMHighResTimeStamp` with a time value approximating the first time the user can interact with the page and the page's primary content has been displayed on the screen. `interactive` will be undefined until page load is complete. (TODO - when is page load complete?)
 
 We rely on [`firstMeaningfulPaint`](https://github.com/tdresser/time-to-first-meaningful-paint/blob/master/README.md) to determine when the page's primary content has been displayed on the screen.
 
@@ -28,3 +28,4 @@ If `firstMeaningfulPaint` occurs during a window of interactivity, `interative` 
 * Is 50ms a reasonable task length threshold?
 * Is 10 seconds a reasonable window length threshold?
 * Is `interactive` a reasonable name?
+* Define when page load is complete.
